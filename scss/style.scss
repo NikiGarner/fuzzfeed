@@ -1,0 +1,67 @@
+
+@import "bourbon/bourbon.scss";
+@import "neat/neat.scss";
+
+
+body {
+  @include font-face("source-sans-pro", "/fonts/source-sans-pro/source-sans-pro-regular");
+  font-family: $helvetica;
+}
+  .navmain {
+    @include span-columns(12);
+    border:solid;
+    background: tint(red, 30%);
+    height: 80%;
+    h1 {
+      padding-left: 7%;
+      font-size: 40px;
+    }
+    li{
+      display:inline;
+    }
+    a {
+      text-decoration: none;
+      padding: 15px;
+      float: left;
+    }
+  }
+
+  .main-story {
+    @include span-columns(12);
+    border:solid;
+    .text1 {
+      position: absolute;
+      top: 300px;
+      right: 300px;
+      color: white;
+    }
+  }
+  .top-story{
+    @include span-columns(12);
+    border:solid;
+    .top-story1{
+      @include span-columns(3);
+      border:dashed;
+      float:left;
+    }
+    .top-story2{
+      @extend .top-story1;
+    }
+    .top-story3{
+      @extend .top-story1;
+    }
+    .top-story4{
+      @extend .top-story1;
+    }
+
+  }
+
+  .content{
+    @include span-columns(8);
+    border:solid;
+    margin-left: 16%;
+  }
+
+  img{
+    width:100%;
+  }

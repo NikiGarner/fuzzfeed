@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+@font-face {
+  body {
+    font-family: "source-sans-pro";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/source-sans-pro/source-sans-pro-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/source-sans-pro/source-sans-pro-regular.woff2") format("woff2"), url("/fonts/source-sans-pro/source-sans-pro-regular.woff") format("woff"), url("/fonts/source-sans-pro/source-sans-pro-regular.ttf") format("truetype"), url("/fonts/source-sans-pro/source-sans-pro-regular.svg#source-sans-pro") format("svg"); } }
+.navmain {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: solid;
+  background: #ff4d4d;
+  height: 80%; }
+  .navmain:last-child {
+    margin-right: 0; }
+  .navmain h1 {
+    padding-left: 7%;
+    font-size: 40px; }
+  .navmain li {
+    display: inline; }
+  .navmain a {
+    text-decoration: none;
+    padding: 15px;
+    float: left; }
+
+.main-story {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: solid; }
+  .main-story:last-child {
+    margin-right: 0; }
+  .main-story .text1 {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    color: white; }
+
+.top-story {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: solid; }
+  .top-story:last-child {
+    margin-right: 0; }
+  .top-story .top-story1, .top-story .top-story2, .top-story .top-story3, .top-story .top-story4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    border: dashed;
+    float: left; }
+    .top-story .top-story1:last-child, .top-story .top-story2:last-child, .top-story .top-story3:last-child, .top-story .top-story4:last-child {
+      margin-right: 0; }
+
+.content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  border: solid;
+  margin-left: 16%; }
+  .content:last-child {
+    margin-right: 0; }
+
+img {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
