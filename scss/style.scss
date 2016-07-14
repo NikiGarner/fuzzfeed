@@ -2,19 +2,29 @@
 @import "bourbon/bourbon.scss";
 @import "neat/neat.scss";
 
+$in-img-text: white;
+$content-margin: 15px;
+
 
 body {
-  @include font-face("source-sans-pro", "/fonts/source-sans-pro/source-sans-pro-regular");
   font-family: $helvetica;
+}
+h3 {
+  font-family: $lucida-grande;
+  text-transform: uppercase;
 }
   .navmain {
     @include span-columns(12);
-    border:solid;
     background: tint(red, 30%);
     height: 80%;
+
     h1 {
       padding-left: 7%;
       font-size: 40px;
+    }
+    ul{
+      background: darken(orange, 30%);
+      padding:40px;
     }
     li{
       display:inline;
@@ -28,21 +38,21 @@ body {
 
   .main-story {
     @include span-columns(12);
-    border:solid;
     .text1 {
       position: absolute;
       top: 300px;
       right: 300px;
-      color: white;
+      color: $in-img-text;
     }
   }
   .top-story{
     @include span-columns(12);
-    border:solid;
+    margin-top: $content-margin;
     .top-story1{
       @include span-columns(3);
-      border:dashed;
+      border: 1px solid lightgrey;
       float:left;
+      text-align: center;
     }
     .top-story2{
       @extend .top-story1;
@@ -58,8 +68,17 @@ body {
 
   .content{
     @include span-columns(8);
-    border:solid;
     margin-left: 16%;
+    margin-top: $content-margin;
+    .content1 {
+      border: 1px solid lightgrey;
+    }
+    .content2 {
+      @extend .content1;
+    }
+    .content3 {
+      @extend .content1;
+    }
   }
 
   img{
